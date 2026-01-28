@@ -1,0 +1,32 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: appdb
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: change_me
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks: [appnet]
+
+  api:
+    build: ./api
+    environment:
+      ASPNETCORE_URLS: http://0.0.0.0:8080
+      ConnectionStrings__Default: Host=db;Port=5432;Database=appdb;Username=appuser;Password=change_me
+    depends_on: [db]
+    networks: [appnet]
+
+  web:
+    image: caddy:2
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./frontend/dist:/srv:ro
+    depends_on: [api]
+    networks: [appnet]
+
+volumes:
+  db_data:
+
+networks:
+  appnet:
