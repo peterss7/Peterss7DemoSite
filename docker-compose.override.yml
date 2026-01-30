@@ -3,7 +3,6 @@ services:
     ports:
       - "8080:80"
 
-  # Optional: expose API directly for Swagger debugging
   api:
     ports:
       - "5001:8080"
