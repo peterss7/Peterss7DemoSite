@@ -2,20 +2,23 @@ services:
   db:
     image: postgres:16
     environment:
-      POSTGRES_DB: appdb
-      POSTGRES_USER: appuser
-      POSTGRES_PASSWORD: change_me
+      POSTGRES_DB: peterssdb
+      POSTGRES_USER: peter
+      POSTGRES_PASSWORD: password123
     volumes:
       - db_data:/var/lib/postgresql/data
     networks: [appnet]
 
   api:
-    build: ./api
+    build:
+      context: ./server      
+      dockerfile: Dockerfile
     environment:
       ASPNETCORE_URLS: http://0.0.0.0:8080
-      ConnectionStrings__Default: Host=db;Port=5432;Database=appdb;Username=appuser;Password=change_me
+      ConnectionStrings__Default: Host=db;Port=5432;Database=peterssdb;Username=peter;Password=password123
     depends_on: [db]
     networks: [appnet]
+
 
   web:
     image: caddy:2

@@ -1,4 +1,7 @@
+
 using PeterssDemoSite.Infrastructure.Extensions;
+
+namespace PeterssDemoSite.Api;
 
 public class Program
 {
@@ -6,12 +9,7 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        ConfigurationManager configuration = builder.Configuration;
-        configuration.AddJsonFile("appsettings.json")
-            .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
-            .AddJsonFile("appsettings.Local.json", optional: true);
-
-        builder.Services.StartupApplication(configuration);
+        builder.Services.StartupApplication(builder.Configuration);
 
         var app = builder.Build();
 
@@ -20,6 +18,8 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+
+        app.MapGet("health", () => Results.Ok("Healthy"));
 
         app.UseHttpsRedirection();
 

@@ -1,0 +1,11 @@
+services:
+  web:
+    ports:
+      - "8080:80"
+
+  # Optional: expose API directly for Swagger debugging
+  api:
+    ports:
+      - "5001:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
