@@ -2,7 +2,7 @@ peterss7-demo-site.com, www.peterss7-demo-site.com {
   root * /srv
   encode gzip
 
-  handle /api/* {
+  handle_path /api/* {
     reverse_proxy api:8080
   }
 
