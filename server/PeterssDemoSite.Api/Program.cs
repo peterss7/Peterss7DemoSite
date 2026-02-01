@@ -19,7 +19,7 @@ public class Program
             app.UseSwaggerUI();
         }
 
-        app.MapGet("api/health", () => Results.Ok("Healthy"));
+        app.MapGet("/health", () => Results.Ok("Healthy"));
 
         app.UseHttpsRedirection();
 
