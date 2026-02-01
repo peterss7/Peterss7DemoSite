@@ -11,6 +11,3 @@ FILES=(-f docker-compose.yml)
 docker compose "${FILES[@]}" up -d --build
 docker compose "${FILES[@]}" ps
 EOF
-
-chmod +x docker-up.sh
-./docker-up.sh
