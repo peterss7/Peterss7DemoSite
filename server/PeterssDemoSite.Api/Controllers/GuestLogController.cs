@@ -7,7 +7,7 @@ namespace PeterssDemoSite.Api.Controllers;
 [ApiController]
 public class GuestLogController : ControllerBase
 {
-    private const string API_ROUTE = "api/guestlog";
+    private const string API_ROUTE = "guestlog";
     private const string CREATE_ROUTE = "";
 
     private readonly ILogger<GuestLogController> _logger;
