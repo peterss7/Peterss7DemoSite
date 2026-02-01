@@ -1,11 +1,15 @@
 peterss7-demo-site.com, www.peterss7-demo-site.com {
-  root * /srv
   encode gzip
 
+  # API first
   handle_path /api/* {
     reverse_proxy api:8080
   }
 
-  try_files {path} /index.html
-  file_server
+  # Everything else = SPA
+  handle {
+    root * /srv
+    try_files {path} /index.html
+    file_server
+  }
 }
