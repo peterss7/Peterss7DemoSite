@@ -1,8 +1,11 @@
-export function HomeSection() {
+import "../../shared/styles/global.css";
+import "../../shared/styles/tStyles.css";
+import "./styles/homeSectionStyles.css";
 
+export function HomeSection() {
     return (
-        <>
-            <h1>T!</h1>
-        </>
+        <main className="main-content t-border-1">
+            <p>HOME</p>
+        </main>
     );
 }

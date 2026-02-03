@@ -1,0 +1,5 @@
+.footer {
+    max-height: 3.5vw;
+    flex-grow: 1;
+    width: 100%;
+}
