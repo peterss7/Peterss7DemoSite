@@ -1,6 +1,5 @@
 import "../../shared/styles/global.css";
 import "../../shared/styles/tStyles.css";
-import "./styles/homeSectionStyles.css";
 
 export function HomeSection() {
     return (

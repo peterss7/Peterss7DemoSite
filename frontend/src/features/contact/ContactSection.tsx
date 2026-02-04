@@ -2,7 +2,7 @@ import "../../shared/styles/global.css";
 
 export function ContactSection() {
     return (
-        <main className="contact-section">
+        <main className="contact-section" id="contact">
             <p>CONTACT</p>
         </main>
     );

@@ -2,8 +2,8 @@ import "../../shared/styles/global.css";
 
 export function AboutSection() {
     return (
-        <main id="about" className="main-content">
-            <p>ABOUT</p>
+        <main className="main-content">
+            <p style={{ color: "green" }}>ABOUT</p>
         </main>
     );
 }

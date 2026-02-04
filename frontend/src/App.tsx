@@ -1,8 +1,17 @@
-import MainContainer from "./layout/MainContainer";
+import "./shared/styles/global.css";
+import "./layout/styles/mainStyles.css";
+import "./layout/styles/footerStyles.css";
+import { Outlet } from "react-router-dom";
+import { Navbar, Footer } from "./layout";
+
 
 export default function App() {
 
-    return (        
-        <MainContainer />
+    return (
+        <>
+            <Navbar />
+            <Outlet />
+            <Footer />
+        </>
     );
 }

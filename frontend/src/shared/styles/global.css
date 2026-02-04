@@ -31,3 +31,16 @@
     color: white;
     width: 100%;
 }
+
+.footer {
+    max-height: 3.5vw;
+    flex-grow: 1;
+    width: 100%;
+}
+
+main #main-content{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
