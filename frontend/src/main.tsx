@@ -5,6 +5,8 @@ import { AboutSection } from './features/about';
 import { ContactSection } from './features/contact';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const router = createBrowserRouter([
   {
