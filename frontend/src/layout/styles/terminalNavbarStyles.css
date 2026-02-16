@@ -1,0 +1,90 @@
+.terminal-navbar {
+    background: #000;
+    border-bottom: 1px solid #0f0;
+}
+
+.terminal-navbar .navbar-link {
+    color: #0f0;
+}
+
+.terminal-navbar .navbar-link:hover {
+    color: #b6ffb6;
+}
+
+/* .terminal-dropdown-link {
+    text: ""
+} */
+
+.dropdown-menu {
+    color: #000;
+}
+
+.dropdown-menu a {
+    color: #0F0;
+}
+
+/* terminal-navbar.css (or global.css) */
+.navbar.terminal-nav {
+    background-color: #000 !important;
+    border-bottom: 1px solid #0f0;
+}
+
+/* Brand (site name) */
+.navbar.terminal-nav .navbar-brand {
+    color: #0f0 !important;
+}
+
+/* Links */
+.navbar.terminal-nav .nav-link {
+    color: #0f0 !important;
+}
+
+/* Hover/focus */
+.navbar.terminal-nav .nav-link:hover,
+.navbar.terminal-nav .nav-link:focus {
+    color: #b6ffb6 !important;
+}
+
+/* Hamburger icon (if using expand/collapse) */
+.navbar.terminal-nav .navbar-toggler {
+    border-color: #0f0;
+}
+
+.navbar.terminal-nav .navbar-toggler-icon {
+    filter: invert(1);
+    /* makes the default icon visible on black */
+}
+
+/* Dropdown menu panel */
+.navbar.terminal-nav .dropdown-menu {
+    background: #000 !important;
+    border: 1px solid #0f0 !important;
+    border-radius: 0;
+    /* optional: more terminal-y */
+    padding: 6px 0;
+}
+
+/* Dropdown items */
+.navbar.terminal-nav .dropdown-item {
+    color: #0f0 !important;
+    background: transparent !important;
+}
+
+/* Hover/focus */
+.navbar.terminal-nav .dropdown-item:hover,
+.navbar.terminal-nav .dropdown-item:focus {
+    background: #021a02 !important;
+    /* subtle green-ish black */
+    color: #b6ffb6 !important;
+}
+
+/* Divider line inside dropdown */
+.navbar.terminal-nav .dropdown-divider {
+    border-top: 1px solid #0f0 !important;
+    opacity: 0.5;
+}
+
+/* Optional: the little arrow/caret color (if needed) */
+.navbar.terminal-nav .dropdown-toggle::after {
+    border-top-color: #0f0;
+}

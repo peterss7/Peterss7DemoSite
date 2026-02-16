@@ -1,5 +1,3 @@
-import "../../shared/styles/global.css";
-
 export function AboutSection() {
     return (
         <main className="main-content">

@@ -1,0 +1,14 @@
+.terminal-panel {
+    border: 1px solid #0F0;
+}
+
+.terminal-panel-header {
+    padding: 10px 12px;
+    border-bottom: 1px solid #0F0;
+    font-weight: 600;
+}
+
+.terminal-panel-body{
+    padding: 12px;
+    line-height: 1.5;
+}

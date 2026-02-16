@@ -1,10 +1,10 @@
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import Logo from "../assets/sp-tengwar-128.svg?react";
+import Logo from "../../../public/sp-tengwar-128.svg?react";
 
 export function TerminalNavbar() {
     return (
         <>
-            <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark" sticky="top">
+            <Navbar expand="lg" className="terminal-nav" sticky="top">
                 <Container>
                     <div>
                         <Logo style={{ height: "4rem", width: "4rem" }} />

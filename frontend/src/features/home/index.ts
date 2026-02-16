@@ -1,1 +1,1 @@
-export { HomeSection } from "./HomeSection";
+export { HomeSection } from "./components/HomeSection";
