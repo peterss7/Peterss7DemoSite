@@ -11,7 +11,6 @@ import "./layout/styles/terminalNavbarStyles.css";
 import "./layout/styles/footerStyles.css";
 import "./layout/styles/terminalLayoutStyles.css";
 import "./shared/styles/global.css";
-import "./shared/styles/tStyles.css";
 import "./shared/styles/terminalSharedStyles.css";
 import "./features/home/styles/homeStyles.css";
 

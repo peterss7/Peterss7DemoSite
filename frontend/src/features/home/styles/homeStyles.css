@@ -14,12 +14,12 @@
     height: 15rem;
     image-rendering: auto;
 }
-
+/* 
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-}
+} */
 
 .terminal-list {
     margin: 0;
@@ -30,7 +30,7 @@
     height: 6rem;
     width: 6rem;
 }
-
+/* 
 @media (max-width: 800px) {
     .home-grid {
         grid-template-columns: 1fr;
@@ -39,4 +39,4 @@
     .home-hero {
         grid-template-columns: 1fr;
     }
-}
+} */
