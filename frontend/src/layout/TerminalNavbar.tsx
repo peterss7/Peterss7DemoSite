@@ -24,7 +24,7 @@ export function TerminalNavbar() {
                                     <NavDropdown.Item href="projects/misc">Misc. Projects</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="projects/non-technical">
-                                        Other Projects
+                                        Hobbies
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link href="about">About</Nav.Link>
