@@ -8,7 +8,7 @@ export function HomeSection() {
                 <div className="flex-row" style={{ gap: "50px"}}>
                     <div className="flex-column">
                         <div>
-                            <p>
+                            <p className="lead">
                                 Hi, I’m Steven. I build .NET + React stuff and I like making weird
                                 interactive portfolio experiences.
                             </p>

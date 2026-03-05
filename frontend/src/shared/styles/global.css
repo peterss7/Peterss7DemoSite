@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+    height: 100%;
+    background: #000;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -34,4 +41,17 @@
 
 .space-around {
     justify-content: space-around;
+}
+
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+}
+
+.main-content {
+    flex: 1;
+    min-height: 0;
+    background: #000;
 }
